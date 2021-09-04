@@ -28,7 +28,7 @@ export function makeServer() {
     },
 
     seeds(server) { // preencher com dados ficticios quando o servidor for inicializado
-      server.createList('user', 200) // vai criar 200 usuarios
+      server.createList('user', 10) // vai criar 10 usuarios
     },
 
     routes() {
