@@ -52,7 +52,9 @@ export function makeServer() {
           { users }
         );
       }); 
+      this.get('/users/:id'); // buscar usuarios pelo id
       this.post('/users'); // sabe que precisa criar um usuario de forma automatizada
+
 
       this.namespace = '';
       this.passthrough(); // todas as chamadas que tiverem 'api', passarao pelo mirage. Caso nao sejam detectadas, passarao adiante 
