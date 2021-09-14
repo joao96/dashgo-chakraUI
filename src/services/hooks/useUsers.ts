@@ -47,7 +47,7 @@ export function useUsers(page: number, options?: UseQueryOptions) {
        * Se eu passo ele, a primeira requisição não será feita pelo lado do cliente, apenas
        * pelo lado do SSR (SERVIDOR)
        */
-      ...options, 
+      // ...options, 
     }
   ) as UseQueryResult<GetUsersResponse, unknown>; 
 }
